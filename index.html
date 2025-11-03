@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <main class="container">
+        <h1>Pomodoro Timer</h1>
+
+        <div class="session-type" id="session-type">Work Session</div>
+        <div class="timer" id="timer">25:00</div>
+
+        <div class="progress-container">
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
+
+        <div class="controls">
+            <button id="start-btn">Start</button>
+            <button id="pause-btn">Pause</button>
+            <button id="reset-btn">Reset</button>
+        </div>
+
+        <div class="stats">
+
+            <div class="stat">
+                <div class="stat-label">Completed</div>
+                <div class="stat-value" id="completed">0</div>
+            </div>
+
+            <div class="stat">
+                <div class="stat-label">Cycle</div>
+                <div class="stat-value" id="completed">1/4</div>
+            </div>
+
+        </div>
+
+        <div class="settings">
+            <h2><i class="fa-solid fa-gear"></i> Settings</h2>
+            <div class="setting-group">
+                <label for="#">Work Duration (minutes)</label>
+                <input type="number" id="work-duration" min="1" max="60" value="25">
+            </div>
+            <div class="setting-group">
+                <label for="#">Break Duration (minutes)</label>
+                <input type="number" id="break-duration" min="1" max="30" value="5">
+            </div>
+            <div class="setting-group">
+                <label for="#">Long Break Duration (minutes)</label>
+                <input type="number" id="long-break-duration" min="1" max="60" value="25">
+            </div>
+        </div>
+
+    </main>
+
+    
+
+
+    <script src="app.js"></script>
+</body>
+</html>
